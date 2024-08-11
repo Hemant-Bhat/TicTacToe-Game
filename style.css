@@ -1,0 +1,58 @@
+body{
+	font-family: 'sans-serif', Arial;
+	animation: color-gradient 5s infinite alternate;
+}
+
+.game-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.tictactoe-board {
+	margin-top: 20px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+	border: 1px solid #504d4d;
+	box-shadow: 0 10px 21px #00000026;
+}
+
+.tictactoe-board button {
+	font-size: 2rem;
+    font-weight: 600;
+    background: transparent;
+    border: 1px solid #504d4d;
+}
+
+#restart {
+	color: #fff;
+    padding: 15px;
+    font-weight: bold;
+    background: #ff0101;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 11px #00000026;
+	cursor: pointer;
+}
+
+#restart:disabled{
+	box-shadow: none;
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+button:disabled{
+	cursor: not-allowed;
+}
+
+@keyframes color-gradient{
+	from {
+		background: #c6e9ff;;
+	}
+	to {
+		background: #fff7b8;
+	}
+}
